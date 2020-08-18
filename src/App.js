@@ -2,14 +2,22 @@ import React from "react";
 
 import ProductForm from "./components/admin/ProductForm";
 import AppHeader from "./components/common/AppHeader";
-import AppBar from "./components/common/AppBar";
+import AppMenu from "./components/common/AppMenu";
 import SideBar from "./components/common/SideBar";
 
-export default function Application() {
+export default function App() {
   return (
     <>
+      <AppContent />
+    </>
+  );
+}
+
+function AppContent() {
+  return (
+    <React.Fragment>
       <AppHeader />
-      <AppBar />
+      <AppMenu />
       <div className="container mt-1">
         <div className="row">
           <div className="col-sm-3">
@@ -22,6 +30,6 @@ export default function Application() {
       </div>
 
       <hr />
-    </>
+    </React.Fragment>
   );
 }
