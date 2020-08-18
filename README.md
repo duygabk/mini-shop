@@ -1,2 +1,3 @@
-# mini-shop
+# CkEditor-upload
+
 Created with CodeSandbox
